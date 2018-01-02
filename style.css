@@ -1,0 +1,39 @@
+.main-section{
+  border-bottom-right-radius: 0%;
+}
+
+.main-section::after{
+  border-right: 1400px solid transparent;
+}
+
+.features-section{
+    padding: 2% 0;
+}
+
+.col-feature{
+  text-align: center;
+}
+
+.features2-section {
+  padding: 0 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .imgPublitea{
+    display:none;
+  }
+
+  .intro-text{
+    text-align: center;
+  }
+
+  .navbar-nav {
+    margin: 7.5px -15px;
+    background-color: #ffffffed;
+    border-radius: 10px;
+  }
+
+  .navbar-nav > li > a {
+      color: black;
+  }
+}
