@@ -625,31 +625,40 @@ Llámanos al 958 993 805 o si lo prefieres déjanos tus datos y nos pondremos en
 			var lastY;
 			var sections = document.querySelectorAll('.section-link');
 			var index = 0;
+			
+			var scrollStop = function(callback) {
+				var isScrolling;
 
-			setInterval(function() {
-				if (!shouldJump && lastY == window.scrollY)
-					shouldJump = true;
-
+				window.addEventListener('scroll', function(event) {
+					window.clearTimeout(isScrolling);
+					isScrolling = setTimeout(function() {
+						callback();
+					}, 66);
+				}, false);
+			};
+			
+			scrollStop(function() {
 				lastY = window.scrollY;
-			}, 100);
-
-			window.onscroll = function() {
+				shouldJump = true;
+			});
+			
+			setInterval(function() {
 				if (shouldJump) {
-					shouldJump = false;
-
-					if (window.scrollY >= lastY) {
-						if (index + 1 < sections.length) {
-							index = index + 1;
-							sections[index].click();
-						}
+					if (window.scrollY > lastY && index + 1 < sections.length) {
+						shouldJump = false;
+						index = index + 1;
+						sections[index].click();
 					}
-					else if (index - 1 >= 0) {
+					else if (window.scrollY < lastY && index - 1 >= 0) {
+						shouldJump = false;
 						index = index - 1;
 						sections[index].click();
 					}
+				
+					lastY = window.scrollY;
 				}
-			};
-
+			}, 100);
+			
 			for (let i = 0; i < sections.length; i++) {
 				sections[i].onclick = function() {
 					shouldJump = false;
