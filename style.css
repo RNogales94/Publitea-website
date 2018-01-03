@@ -3,6 +3,9 @@ section {
 	overflow: auto;
 }
 
+section:nth-child(even)		{ background-color:white; }
+section:nth-child(odd)		{ background-color:black; }
+
 .main-section{
   border-bottom-right-radius: 0%;
 }
