@@ -521,16 +521,17 @@
 		<section id="contact" class="contact-us text-center">
           <div class="overlay">
           	<div class="container">
-          	  <h2>Contact Us</h2>
+          	  <h2>CONTACTA CON NOSOTROS</h2>
           	  <hr>
           	  <hr>
-          	  <p class="lead">Feel Free To Contact Us</p>
+          	  <p class="lead">Si buscas ser diferente, y destacar entre tu competencia, confía en Publitea.
+Llámanos al 958 993 805 o si lo prefieres déjanos tus datos y nos pondremos en contacto contigo lo antes posible, consúltanos sin compromiso.</p>
           	  <div class="row">
           	  	<form method='post'><input type='hidden' name='form-name' value='form 2' />
           	  	  <div class="col-md-6">
           	  	  	<div class="form-group">
           	  	  	  <input type="text" class="form-control input-lg"
-          	  	  	          placeholder="Username*">
+          	  	  	          placeholder="Nombre*">
           	  	  	</div>
 
           	  	  	<div class="form-group">
@@ -540,13 +541,13 @@
 
           	  	  	<div class="form-group">
           	  	  	  <input type="text" class="form-control input-lg"
-          	  	  	          placeholder="Cell Phone">
+          	  	  	          placeholder="Teléfono">
           	  	  	</div>
           	  	  </div>
           	  	  <div class="col-md-6">
-          	  	  	<textarea placeholder="your massage*" id="description" class="form-control" name="message" rows="7" required="required"></textarea>
+          	  	  	<textarea placeholder="Mensaje*" id="description" class="form-control" name="message" rows="7" required="required"></textarea>
           	  	  	<button class="btn  btn-lg btn-block">
-          	  	  	 contact us</button>
+          	  	  	 ENVIAR</button>
           	  	  </div>
           	  	</form>
           	  </div>
@@ -624,18 +625,18 @@
 			var lastY;
 			var sections = document.querySelectorAll('.section-link');
 			var index = 0;
-		
+
 			setInterval(function() {
 				if (!shouldJump && lastY == window.scrollY)
 					shouldJump = true;
-			
+
 				lastY = window.scrollY;
 			}, 100);
-		
+
 			window.onscroll = function() {
 				if (shouldJump) {
 					shouldJump = false;
-					
+
 					if (window.scrollY >= lastY) {
 						if (index + 1 < sections.length) {
 							index = index + 1;
@@ -648,7 +649,7 @@
 					}
 				}
 			};
-			
+
 			for (let i = 0; i < sections.length; i++) {
 				sections[i].onclick = function() {
 					shouldJump = false;
