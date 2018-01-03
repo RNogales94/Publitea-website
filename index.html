@@ -623,23 +623,38 @@
 			var shouldJump = true;
 			var lastY;
 			var sections = document.querySelectorAll('.section-link');
+			var index = 0;
 		
 			setInterval(function() {
-				if (document.body.style.overflow == 'hidden' && lastY == window.scrollY) {
-					document.body.style.overflow = 'auto';
-					setTimeout(function() { shouldJump = true; }, 100);
-				}
+				if (!shouldJump && lastY == window.scrollY)
+					shouldJump = true;
 			
 				lastY = window.scrollY;
-			}, 500);
+			}, 100);
 		
 			window.onscroll = function() {
 				if (shouldJump) {
 					shouldJump = false;
-					document.body.style.overflow = 'hidden';
-					sections[Math.floor(Math.random() * sections.length)].click();
+					
+					if (window.scrollY >= lastY) {
+						if (index + 1 < sections.length) {
+							index = index + 1;
+							sections[index].click();
+						}
+					}
+					else if (index - 1 >= 0) {
+						index = index - 1;
+						sections[index].click();
+					}
 				}
 			};
+			
+			for (let i = 0; i < sections.length; i++) {
+				sections[i].onclick = function() {
+					shouldJump = false;
+					index = i;
+				};
+			}
 		</script>
   </body>
 </html>
