@@ -92,6 +92,14 @@ section + section {
   color: orange;
 }
 
+body .navbar-toggle{
+  filter: invert(100);
+}
+
+body.scrolled .navbar-toggle{
+  filter: invert(0);
+}
+
 @media only screen and (max-width: 768px) {
   .imgPublitea{
     display:none;
