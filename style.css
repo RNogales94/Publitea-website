@@ -3,8 +3,18 @@ section {
 	overflow: auto;
 }
 
+/* Intercalado de color de fondo */
 section:nth-child(even)		{ background-color:white; }
-section:nth-child(odd)		{ background-color:black; }
+
+section:nth-child(odd)		{
+  background-color:#334;
+  color:#eee;
+}
+
+/* A partir del primer section... */
+section + section {
+   margin-top: 5vh;
+}
 
 .main-section{
   border-bottom-right-radius: 0%;
@@ -15,7 +25,7 @@ section:nth-child(odd)		{ background-color:black; }
 }
 
 .features-section{
-    padding: 2% 0;
+    padding: 7% 0;
 }
 
 .col-feature{
@@ -23,7 +33,7 @@ section:nth-child(odd)		{ background-color:black; }
 }
 
 .features2-section {
-  padding: 0 0;
+  padding: 7% 0;
 }
 
 @media only screen and (max-width: 768px) {
