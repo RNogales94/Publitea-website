@@ -1,0 +1,113 @@
+section {
+	height: 100vh;
+	overflow: auto;
+}
+
+/* Intercalado de color de fondo */
+section:nth-child(even)		{ background-color:white; }
+
+section:nth-child(odd)		{
+  background-color:#334;
+  color:#eee;
+}
+
+/* A partir del primer section... */
+section + section {
+   margin-top: 5vh;
+}
+
+.main-section{
+  border-bottom-right-radius: 0%;
+  background-image: url('../img/mt-sample-background.jpg');
+}
+
+.main-section::after{
+  border-right: 1400px solid transparent;
+}
+
+.fluid-section{
+  padding: 4% 0;
+}
+
+#whatis{
+  text-align: center;
+}
+
+.custom-p{
+  font-size: 18px;
+  margin: 3% 0;
+  padding: 0 23%;
+}
+
+#dron-services{
+  background-image: url('../img/StockSnap_MT4FA0QBPD-compressor.jpg');
+
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height: 100vh;
+}
+
+#quality-services{
+  background-image: url('../img/StockSnap_SWRREC0K3A.jpg');
+
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height: 100vh;
+}
+
+.dron-content {
+  background-color: #ffffff57;
+  height: 100vh;
+  padding: 6% 6%;
+	color: black;
+}
+
+.dron-content p{
+  font-size: 17px;
+}
+
+.features-section{
+    padding: 6% 0;
+}
+
+.col-feature{
+  text-align: center;
+}
+
+.features2-section {
+  padding: 0 0;
+}
+
+.features2-mockup img{
+  border-radius: 2%;
+}
+
+.orange{
+  color: orange;
+}
+
+@media only screen and (max-width: 768px) {
+  .imgPublitea{
+    display:none;
+  }
+
+  .intro-text{
+    text-align: center;
+  }
+
+  .navbar-nav {
+    margin: 7.5px -15px;
+    background-color: #ffffffed;
+    border-radius: 10px;
+  }
+
+  .navbar-nav > li > a {
+      color: black;
+  }
+}
