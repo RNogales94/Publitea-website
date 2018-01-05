@@ -39,6 +39,18 @@ section + section {
   padding: 0 23%;
 }
 
+#intro{
+  position: relative;
+  height: 100vh;
+}
+
+#intro-text{
+  font-size: 17px;
+}
+
+#intro-text p {
+  margin: 3% 0;  
+}
 #dron-services{
   background-image: url('../img/StockSnap_MT4FA0QBPD-compressor.jpg');
 
@@ -112,11 +124,12 @@ body.scrolled .navbar-toggle{
   .imgPublitea{
     display:none;
   }
-
+  
   .intro-text{
     text-align: center;
+    margin: 10% 7% 7% 5%;
   }
-
+    
   .navbar-nav {
     margin: 7.5px -15px;
     background-color: #ffffffed;
