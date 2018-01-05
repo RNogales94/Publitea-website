@@ -92,6 +92,14 @@ section + section {
   color: orange;
 }
 
+.section-title{
+	padding-top: 7%;
+}
+
+.rotateslider-container{
+	height: 550px;
+}
+
 body .navbar-toggle{
   filter: invert(100);
 }
