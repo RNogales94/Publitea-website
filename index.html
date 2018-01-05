@@ -3,7 +3,7 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>Horizontal navigation dots - fullPage.js</title>
+  <title>Publitea - fullPage</title>
 	<meta name="author" content="Alvaro Trigo Lopez" />
 	<meta name="description" content="fullPage full-screen navigation and sections control menu." />
 	<meta name="keywords"  content="fullpage,jquery,demo,screen,fullscreen,navigation,control arrows, dots" />
@@ -71,7 +71,7 @@
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
 				anchors: ['firstPage', 'secondPage', '3rdPage'],
-				sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
+				sectionsColor: ['#C63D0F', '#1BBC9B', '#D36151', '#516BD3', '#938455', '#85654F', '#7A8594'],
 				navigation: true,
 				navigationPosition: 'right',
 				navigationTooltips: ['Inicio', 'Second page', 'Third and last page']
@@ -85,16 +85,19 @@
 
 <nav class="fixed-nav-bar">
   <div id="navmenu" class="navmenu">
-    <a class="sitename" href="#">Fixed Nav Bar</a>
+    <a class="sitename" href="#">PUBLITEA</a>
     <!-- Example responsive navigation menu  -->
     <a class="show" href="#navmenu">Menu</a>
     <a class="hide" href="#hidenavmenu">Menu</a>
     <ul class="navmenu-items">
-      <li><a href="//sixrevisions.com">Home</a></li>
-      <li><a href="//sixrevisions.com/about/">About</a></li>
-      <li><a href="//sixrevisions.com/contact/">Contact</a></li>
-      <li><a href="//twitter.com/sixrevisions">Twitter</a></li>
-      <li><a href="//www.facebook.com/sixrevisions">Facebook</a></li>
+      <li><a href="#section0">Intro</a></li>
+      <li><a href="#section1">Servicios</a></li>
+      <li><a href="#section2">Drones</a></li>
+      <li><a href="#section3">Calidad</a></li>
+      <li><a href="#section4">Trabajo</a></li>
+      <li><a href="#section5">Clientes</a></li>
+      <li><a href="#section6">Contacto</a></li>
+
   </ul>
   </div>
 </nav>
@@ -104,34 +107,62 @@
 
 
 
-<div id="fullpage">
-	<div class="section " id="section0">
+<div id="fullpage">   <!--[ BEGIN FULL PAGE ] -->
+	<div class="section " id="section0"><!--[ SECTION 0 ] -->
 		<div class="intro">
 			<h1>Publitea</h1>
 			<p>El poder de las ideas</p>
 		</div>
 	</div>
-	<div class="section" id="section1">
-	    <div class="slide" id="slide1">
+	<div class="section" id="section1"> <!--[ SECTION 1 ] -->
 			<div class="intro">
-				<h1>Clickable</h1>
+				<h1>Servicios</h1>
 				<p>
-					You can even click on the navigation and jump directly to another section.
+					Hacemos de to picha, que tu quiere? dimelo!
 				</p>
 			</div>
-		</div>
-
-	    <div class="slide" id="slide2">
-			<h1>Slide 2</h1>
-		</div>
-
 	</div>
-	<div class="section" id="section2">
+	<div class="section" id="section2"> <!--[ SECTION 2 ] -->
 		<div class="intro">
-			<h1>Enjoy it</h1>
+			<h1>Drones</h1>
+      <p>
+        Si picha, hasta volamos drones, tu que quiere ve a la vesina en la pisina?
+      </p>
 		</div>
 	</div>
-</div>
+  <div class="section" id="section3"> <!--[ SECTION 3 ] -->
+		<div class="intro">
+			<h1>Calidad</h1>
+      <p>
+        Hombre pos claro que dejamos las cosas bien hechicas, no te quejaras!
+      </p>
+		</div>
+	</div>
+  <div class="section" id="section4"> <!--[ SECTION 4 ] -->
+		<div class="intro">
+			<h1>Así Trabajamos</h1>
+      <p>
+        Con mucho cuidaoo
+      </p>
+		</div>
+	</div>
+  <div class="section" id="section5"> <!--[ SECTION 5 ] -->
+		<div class="intro">
+			<h1>Nuestros Clientes</h1>
+      <p>
+        Hombre claro! Alguno que otro tenemos hermano.. ya me jodería...
+      </p>
+		</div>
+	</div>
+  <div class="section" id="section6"> <!--[ SECTION 6 ] -->
+		<div class="intro">
+			<h1>Contacto</h1>
+      <p>
+        Foh picha, llamame aunque sea pa unas cervecicas y ya vemos que tu quiere
+      </p>
+		</div>
+	</div>
+</div> <!--[ END FULL PAGE ] -->
 
 
 </body>
