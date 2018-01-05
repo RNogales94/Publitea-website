@@ -9,13 +9,14 @@
 	<meta name="keywords"  content="fullpage,jquery,demo,screen,fullscreen,navigation,control arrows, dots" />
 	<meta name="Resource-type" content="Document" />
 
-
+  <!-- Nota: style.css comienza con una reinicializacion de estilos -->
 	<link rel="stylesheet" type="text/css" href="static/css/style.css" />
   <link rel="stylesheet" type="text/css" href="static/css/jquery.fullPage.css" />
-  <link rel="stylesheet" type="text/css" href="fixed-navigation-bar.css" />
+  <link rel="stylesheet" type="text/css" href="static/css/navbar.css" />
+
+
 
 	<style>
-
 	/* Style for our header texts
 	* --------------------------------------- */
 	h1{
@@ -51,6 +52,7 @@
 	}
 	</style>
 
+
 	<!--[if IE]>
 		<script type="text/javascript">
 			 var console = { log: function() {} };
@@ -81,12 +83,13 @@
 <body>
 
 
-<nav class="fixed-nav-bar" id="header">
-  <div id="menu" class="menu">
-    <a class="sitename" href="fixed-navigation-bar.html">Fixed Nav Bar</a>
+<nav class="fixed-nav-bar">
+  <div id="navmenu" class="navmenu">
+    <a class="sitename" href="#">Fixed Nav Bar</a>
     <!-- Example responsive navigation menu  -->
-    <a class="show" href="#menu">Menu</a><a class="hide" href="#hidemenu">Menu</a>
-    <ul class="menu-items">
+    <a class="show" href="#navmenu">Menu</a>
+    <a class="hide" href="#hidenavmenu">Menu</a>
+    <ul class="navmenu-items">
       <li><a href="//sixrevisions.com">Home</a></li>
       <li><a href="//sixrevisions.com/about/">About</a></li>
       <li><a href="//sixrevisions.com/contact/">Contact</a></li>
@@ -95,6 +98,11 @@
   </ul>
   </div>
 </nav>
+
+
+
+
+
 
 <div id="fullpage">
 	<div class="section " id="section0">

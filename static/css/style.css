@@ -250,35 +250,6 @@ p{
 	padding: 0 0 5px 0;
 }
 
-/* Navbar Bootstrap overriding
-* --------------------------------------- */
-
-.navbar-default {
-	background-color:transparent !important;
-	border-color:transparent;
-	background-image:none;
-	box-shadow:none;
-}
-
-.navbar-default .navbar-nav>li>a {
-  font-size:20px;
-  color:#fff;
-}
-
-.navbar-nav {
-  margin:40px 0;
-}
-
-.navbar-toggle {
-  margin:10px 0;
-  background:#36C;
-  color:#FFF;
-}
-
-
-
-
-
 
 
 /* Demos Menu
